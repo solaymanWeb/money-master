@@ -3,10 +3,14 @@ function getExpenses(products){
     const expensesInput = document.getElementById(products + '-input');
     const totalInputExpenses = expensesInput.value;
 
+if (isNaN(document.getElementById(products + '-input').value)){
+        alert('please enter just number ')
+} 
 
 if(totalInputExpenses == ""){
-    alert('Opps ! Please fill up input box')
-    return 
+     alert('Opps ! Please enter the number')
+     return 
+ 
 }else if(totalInputExpenses < 0){
     alert('Opps ! Negetive Number Is Not Allow')
     return
