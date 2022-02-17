@@ -27,31 +27,31 @@
                       <div class="mb-2 row ">
                         <label for="" class="col-3 col-lg-3 col-form-label">Income :</label>
                         <div class="col-9 col-lg-8 ">
-                          <input type="text" class="form-control p-1  w-75" id="">
+                          <input type="text"  class="form-control p-1  w-75" id="income-input">
                         </div>
                         <h4 class="fs-6 fw-bold">Expenses</h4>
                       </div>
                       <div class="mb-2 row  ">
                         <label for="" class="col-sm-3 col-3 col-form-label">Food :</label>
                         <div class="col-sm-8 col-9 ">
-                          <input type="text" class="form-control p-1  w-75" id="">
+                          <input  type="text" class="form-control p-1  w-75" id="food-input">
                         </div>
                       </div>
                       <div class="mb-2 row  ">
                         <label for="" class="col-sm-3 col-3 col-form-label">Rent :</label>
                         <div class="col-sm-8 col-9">
-                          <input type="text" class="form-control p-1  w-75" id="">
+                          <input type="text" class="form-control p-1  w-75" id="rent-input">
                         </div>
                       </div>
                       <div class="mb-2 row  ">
                         <label for="" class="col-sm-3 col-3 col-form-label">Clothes :</label>
                         <div class="col-sm-8 col-9">
-                          <input type="text" class="form-control p-1  w-75" id="">
+                          <input type="text" class="form-control p-1  w-75" id="clothes-input">
                         </div>
                       </div>
-                      <button class="btn btn-primary py-1 cal-button w-25 ">Calculate</button>
-                      <h4 class="fs-6 p-2 fw-bold"> Total Expenses : </h4>
-                      <h4 class="fs-6 fw-bold">Balance : </h4>
+                      <button id="calculate-btn" class="btn btn-primary py-1  cal-button w-25 ">Calculate</button>
+                      <h4 class="fs-6 p-2 fw-bold"> Total Expenses : <span id="total-expenses-display" ></span> </h4>
+                      <h4 class="fs-6 fw-bold">Balance : <span id="balance-display"></span> </h4>
 
                       <!-- Parsentens Amount -->
 
@@ -80,6 +80,6 @@
        </section>
     </main>
     
-    <script src="ja/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
