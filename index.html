@@ -12,25 +12,73 @@
 </head>
 <body>
     <main>
-       <section>
-        <h2 class="text-center text-primary fw-bold p-2"> My Money Account</h2>
+       <section class="pt-3 pb-5">
+        <h2 class="text-center text-primary fw-bold p-3"> My Money Account</h2>
         <div class="container">
-            <div class="row gx-4">
+            <div class="row gx-lg-5">
               <div class="col-lg-7">
-               <div class=" bg-light"><img class="img-fluid mx-auto d-block" src="img/money1.jpg" alt="">
+               <div class=" h-100 bg-light"><img class="img-fluid mx-auto d-block h-100  " src="img/money.jpg" alt="">
             </div>
               </div>
-              <div class="col-lg-5">
-                <div class=" bg-light">Custom column padding</div>
-              </div>
-            </div>
-          </div>
-       </section>
+              <div class="col-lg-5 ">
+                <div class=" bg-light text-center">
 
+                    <h4 class="fs-6 pb-1 pt-4 fw-bold">Income</h4>
+                      <div class="mb-2 row ">
+                        <label for="" class="col-sm-3 col-form-label">Income :</label>
+                        <div class="col-sm-8 ">
+                          <input type="text" class="form-control p-1  w-75" id="">
+                        </div>
+                        <h4 class="fs-6 fw-bold">Expenses</h4>
+                      </div>
+                      <div class="mb-2 row  ">
+                        <label for="" class="col-sm-3 col-form-label">Food :</label>
+                        <div class="col-sm-8 ">
+                          <input type="text" class="form-control p-1  w-75" id="">
+                        </div>
+                      </div>
+                      <div class="mb-2 row  ">
+                        <label for="" class="col-sm-3 col-form-label">Rent :</label>
+                        <div class="col-sm-8 ">
+                          <input type="text" class="form-control p-1  w-75" id="">
+                        </div>
+                      </div>
+                      <div class="mb-2 row  ">
+                        <label for="" class="col-sm-3 col-form-label">Clothes :</label>
+                        <div class="col-sm-8 ">
+                          <input type="text" class="form-control p-1  w-75" id="">
+                        </div>
+                      </div>
+                      <button class="btn btn-primary cal-button w-25 ">Calculate</button>
+                      <h4 class="fs-6 p-2 fw-bold"> Total Expenses : </h4>
+                      <h4 class="fs-6 fw-bold">Balance : </h4>
+
+                      <!-- Parsentens Amount -->
+                      <div class="mb-2 row  ">
+                        <div class="col-sm-6">
+                          <div class="row">
+                            <div class="col-sm-4">Save :</div>
+                            <div class="col-sm-8"><input type="text" class="form-control p-1  " id=""></div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                         <div class="row">
+                           <div class="col-sm-2">
+                             <span>%</span>
+                           </div>
+                           <div class="col-sm-8"> 
+                            <button class="btn btn-primary cal-button w-75  ">Save</button></div>
+                         </div>
+                        </div>
+                </div>
+                <h4 class="fs-6 pb-1 pt-4 fw-bold">Saving Amount :</h4>
+                <h4 class="fs-6 pb-4 fw-bold">Remaining Balance : </h4>
+              </div>
+            </div>
+          </div><!-- /.container -->
+       </section>
     </main>
     
-
-
     <script src="ja/app.js"></script>
 </body>
 </html>
