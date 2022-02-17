@@ -2,14 +2,14 @@
 function getExpenses(products){
     const expensesInput = document.getElementById(products + '-input');
     const totalInputExpenses = expensesInput.value;
-    
+
+
 if(totalInputExpenses == ""){
     alert('Opps ! Please fill up input box')
     return 
-
 }else if(totalInputExpenses < 0){
     alert('Opps ! Negetive Number Is Not Allow')
-
+    return
 }else{
     return totalInputExpenses;
 }
@@ -48,11 +48,10 @@ document.getElementById('save').addEventListener('click', function(){
     savingAmount.innerText =totalPercentage;
     const totalSavingAmount= savingAmount.innerText
 
-
     const balanceDisplay =  document.getElementById('balance-display');
 
     const preBalance = balanceDisplay.innerText;
-
+    //percentage  error handeling
     if(preBalance < totalPercentage){
         alert(' You Owe ! You have no money for balance');
         return;
